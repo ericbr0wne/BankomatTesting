@@ -4,7 +4,7 @@ namespace banko;
 
 public class Bankomat {
 
-    bool cardInserted = false;
+    public bool cardInserted = false;
     Card card;
     int amount;
     int machineBalance = 11000;
