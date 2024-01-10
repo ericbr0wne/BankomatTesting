@@ -1,4 +1,4 @@
-﻿namespace Bankomat.Tests;
+﻿namespace BankomatTests;
 
 using banko;
 
@@ -24,7 +24,7 @@ public class PinCodeFalse
     [InlineData("1234")]
     public void IsPinWrong(string pin)
     {
-        Assert.True(_card.pin.Equals(pin), $"pin is incorrect");
+        Assert.False(_card.pin.Equals(pin), $"pin is incorrect");
 
     }
 
@@ -32,7 +32,7 @@ public class PinCodeFalse
     [InlineData("0123")]
     public void IsPinCorrect(string pin)
     {
-        Assert.False(_card.pin.Equals(pin), $"pin is correct");
+        Assert.True(_card.pin.Equals(pin), $"pin is correct");
 
     }
 

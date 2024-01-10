@@ -1,13 +1,16 @@
+using System;
+
 namespace banko;
 
 public class Account{
-   public int balance = 5000;
+    public int balance = 5000;
     
     public int withdraw(int amount){
         if(amount > 0 && balance >= amount){
             balance -= amount;
             return amount;
-        }else{
+        }
+        else{
             return 0;
         }
     }

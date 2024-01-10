@@ -1,4 +1,4 @@
-﻿namespace Bankomat.Tests;
+﻿namespace BankomatTests;
 
 using banko;
 
